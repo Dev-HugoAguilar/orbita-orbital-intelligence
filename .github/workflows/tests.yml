@@ -32,5 +32,5 @@ jobs:
             echo "Se detectaron posibles credenciales"; exit 1
           fi
           echo "Sin credenciales detectadas"
-
-
+      - name: Verificar procedencia del snapshot orbital
+        run: python tools/verificar_fuentes.py
